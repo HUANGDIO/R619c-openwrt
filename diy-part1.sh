@@ -33,5 +33,4 @@ sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a\set wireless.defa
 
 sed -i "s/OpenWrt /H-Wrt/g" package/lean/default-settings/files/zzz-default-settings
 
-sed -i "s/YouHua WR1200JS/ZIHONG WR1200JS/g" target/linux/ramips/dts/mt7621_youhua_wr1200js.dts
-
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='ZIHONG'' package/lean/default-settings/files/zzz-default-settings
