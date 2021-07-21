@@ -27,10 +27,9 @@ git clone https://github.com/small-5/luci-app-adblock-plus.git package/lean/luci
 
 sed -i 's/root::0:0:99999:7:::/root:$1$8FXWjoqn$vG2VSBEkabshtxxc6H/Yc0:18828:0:99999:7:::/g' package/base-files/files/etc/shadow
 
-sed -i "s/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a\set wireless.default_radio${devidx}.key=zh970525.' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-sed -i "s/OpenWrt /H-Wrt/g" package/lean/default-settings/files/zzz-default-settings
+sed -i 's/OpenWrt /H-Wrt/g' package/lean/default-settings/files/zzz-default-settings
 
-sed -i '/uci commit system/i\uci set system.@system[0].hostname='ZIHONG'' package/lean/default-settings/files/zzz-default-settings
