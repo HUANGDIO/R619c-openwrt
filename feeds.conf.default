@@ -1,5 +1,4 @@
-src-git kenzo https://github.com/kenzok8/openwrt-packages
-src-git small https://github.com/kenzok8/small
+src-git Boos https://github.com/R619AC-OpenWrt/OpenWrt-Packages
 src-git packages https://github.com/x-wrt/packages.git
 src-git luci https://github.com/x-wrt/luci.git
 src-git routing https://github.com/x-wrt/routing.git
